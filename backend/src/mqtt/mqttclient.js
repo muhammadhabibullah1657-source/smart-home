@@ -1,6 +1,6 @@
 import mqtt from "mqtt";
 import dotenv from "dotenv";
-import Device from "../models/device.js";
+import Device from "../models/Device.js";
 
 dotenv.config();
 
