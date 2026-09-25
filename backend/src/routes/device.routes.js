@@ -1,6 +1,6 @@
 import express from "express";
 import auth from "../middleware/auth.js";
-import Device from "../models/Device.js";
+import Device from "../models/device.js";
 import { publishCommand } from "../mqtt/mqttClient.js";
 
 const router = express.Router();
