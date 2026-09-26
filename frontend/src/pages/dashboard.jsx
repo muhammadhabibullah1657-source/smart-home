@@ -180,7 +180,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     fetchDevices();
-    const socket = io("http://localhost:5000");
+    const socket = io("https://smart-home-backend-skfz.onrender.com");
     socket.on("device-update", (updated) => {
       setDevices((prev) =>
         prev.map((d) => (d._id === updated._id ? updated : d))

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://smart-home-backend-skfz.onrender.com/api",
 });
 
 // Attach token automatically to every request
@@ -19,4 +19,4 @@ export const addDevice = (data) => API.post("/devices", data);
 export const toggleDevice = (id) => API.post(`/devices/${id}/toggle`);
 export const deleteDevice = (id) => API.delete(`/devices/${id}`);
 
-export default API;
+export default API; 
